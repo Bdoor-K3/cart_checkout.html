@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>cart_checkout</title>
+  <style>
+    /* any additional styles can be added here */
+  </style>
+
+<script>
+function styleChanging() {
+  var bgColor = document.querySelector(".background-select").value;
+  var fontType = document.querySelector(".font-select").value;
+  var container = document.querySelector(".container");
+  container.style.backgroundColor = bgColor;
+  container.style.fontFamily = fontType;
+}
+
+
+      </script>
+</head>
+<body>
+  <!-- your existing HTML code here -->
+  <div class="container">
+    <form action="">
+        <div class="row">
+            <div class="col">
+  <div class="options">
+    <h3 ><label for="background-select">Background Color:</label></h3>
+    <select class="background-select">
+      <option value="white">White</option>
+      <option value="black">Black</option>
+      <option value="red">Red</option>
+      <option value="green">Green</option>
+      <option value="Blue">Blue</option>
+
+    </select>
+
+    <input type="button" value="Change" class="change-btn" onclick="styleChanging()">
+  </div>
+
+  
+          <h3 class="title">billing address</h3>
+          <div class="inputBox">
+            <span>Full name :</span>
+            <input type="text" placeholder="">
+          </div>
+          <div class="inputBox">
+            <span>Email :</span>
+            <input type="email" placeholder="">
+          </div>
+          <div class="inputBox">
+            <span>Address :</span>
+            <input type="text" placeholder="">
+          </div>
+          <div class="inputBox">
+            <span>city :</span>
+            <input type="text" placeholder="">
+          </div>
+          <div class="flex">
+            <div class="inputBox">
+              <span>state :</span>
+              <input type="text" placeholder="">
+            </div>
+            <div class="inputBox">
+              <span>zip :</span>
+              <input type="text" placeholder="">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <h3><label for="font-select">Font:</label></h3>
+            <select class="font-select">
+              <option value="serif">Serif</option>
+              <option value="sans-serif">Sans-serif</option>
+            </select>
+          <h3 class="title">Payment</h3>
+          <div class="inputBox">
+            <span> accepted cards :</span>
+            <img src="card_img.png" alt="">
+        </div>
+          <div class="inputBox">
+            <span>Name On card :</span>
+            <input type="text" placeholder="">
+          </div>
+          <div class="inputBox">
+            <span>credit card number :</span>
+            <input type="number" placeholder="">
+          </div>
+          <div class="inputBox">
+            <span>Exp month :</span>
+            <input type="text" placeholder="">
+          </div>
+          <div class="flex">
+            <div class="inputBox">
+              <span>Exp year :</span>
+              <input type="number" placeholder="">
+            </div>
+            <div class="inputBox">
+              <span>CVV :</span>
+              <input type="password" placeholder="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <input type="checkbox" name="tnc">
+      <label> Shipping address same as billing</label><br><br>
+      <input type="submit" value="Continue to checkout" class="submit-btn">
+    </form>
+  </div>
+</body>
+</html>

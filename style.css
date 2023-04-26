@@ -1,0 +1,137 @@
+* {
+   font-family: sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-transform: capitalize;
+   transition: all .2s linear;
+}
+.container {
+   min-height: 100vh;
+ }
+  .container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 25px;
+   min-height: 100vh;
+   background: #fff;
+}
+.container form {
+   padding: 50px;
+   width: 700px;
+   background: #f7f0cf;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+.container form .row {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 35px;
+}
+.container form .row .col {
+   flex: 1 1 250px;
+   align-items: center;
+}
+.container form .row .col label {
+   font-size: 20px;
+   color: #333;
+   padding-bottom: 5px;
+   text-transform: uppercase;
+}
+.container form .row .col .title {
+   font-size: 20px;
+   align-items: center;
+   color: #333;
+   padding-bottom: 5px;
+   text-transform: uppercase;
+}
+.container form .row .col .inputBox {
+   margin: 15px 0;
+}
+.container form .row .col .inputBox span {
+   margin-right: 10px;
+   margin-bottom: 10px;
+   display: inline-block;
+   width: 120px;
+}
+.container form .row .col .inputBox input {
+   width: 100%;
+   padding: 8px;
+   border-radius: 5px;
+   border: 1px solid #ddd;
+}
+.container form .row .col .inputBox select {
+   width: 100%;
+   padding: 8px;
+   border-radius: 5px;
+   border: 1px solid #ddd;
+}
+.container form .row .col .flex {
+   display: flex;
+   justify-content: space-between;
+}
+.container form .row .col .flex .inputBox {
+   flex-basis: 48%;
+}
+.container form .inputBox span,
+container form .row .col .inputBox img{
+   height: 34px;
+   margin-top: 5px;
+   filter: drop-shadow(0 0 1px #000);
+  }
+  
+.container form .row .col .change-btn {
+   margin-top: 15px;
+   padding: 8px 16px;
+   background-color: #51565a;
+   color: #fff;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.container form input[type="checkbox"] {
+   margin-right: 10px;
+   margin-top: 15px;
+}
+.container form label {
+   font-size: 16px;
+   color: #333;
+}
+.container form .submit-btn {
+   margin-top: 15px;
+   padding: 16px 26px;
+   background-color: #51565a;
+   color: #fff;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.container form .submit-btn:hover {
+   background: #4e5651;
+}
+.container form .change-btn { 
+   border-radius: 20px;
+   background: #4e5651;
+   font: size 15px;
+   color: #fff;
+   padding: 12px;
+ }
+/* Dynamic background image based on user choice */
+body {
+   background-image: url("black_background.jpg");
+}
+body[data-bg="white"] {
+   background-image: url("white_background.jpg");
+}
+body[data-bg="orange"] {
+   background-image: url("orange_background.jpg");
+}
+body[data-bg="red"] {
+   background-image: url("red_background.jpg");
+}
+body[data-bg="green"] {
+   background-image: url("green_background.jpg");
+}
+body[data-bg="blue"] {
+   background-image: url("blue_background.jpg");
+}
